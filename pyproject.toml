@@ -1,0 +1,37 @@
+[project]
+name = "multiwalker_worldmodel"
+version = "0.1.0"
+description = "Dreamer-based world model and PPO baseline for PettingZoo Multiwalker"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+authors = [{name = "Researcher", email = "researcher@example.com"}]
+dependencies = [
+    "gymnasium==0.29.1",
+    "pettingzoo==1.24.3",
+    "stable-baselines3==2.6.0",
+    "torch==2.6.0",
+    "numpy==1.26.4",
+    "pandas==2.2.3",
+    "matplotlib==3.10.1",
+    "moviepy==2.2.1",
+    "imageio==2.36.0",
+    "imageio-ffmpeg==0.5.1",
+    "scikit-learn==1.7.2",
+    "SuperSuit==3.9.3",
+    "tensorboard==2.17.0"
+]
+
+[project.optional-dependencies]
+develop = [
+    "black==24.8.0",
+    "isort==5.13.2",
+    "mypy==1.11.1",
+    "ruff==0.6.3"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
