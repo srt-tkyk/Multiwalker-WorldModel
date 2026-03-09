@@ -1,5 +1,5 @@
 
-# README: 世界モデル(Dreamer系 RSSM)で学習する Multiwalker 協調制御（共有方策）
+# 世界モデル(Dreamer系 RSSM)で学習する Multiwalker 協調制御（共有方策）
 
 ## **目的**: 
 PettingZoo Multiwalker を対象に、世界モデルあり(Dreamer系)と世界モデルなし(モデルフリーPPO)のAB比較を再現可能に実施する。
