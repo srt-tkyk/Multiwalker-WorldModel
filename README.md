@@ -1,9 +1,13 @@
 
 # README: 世界モデル(Dreamer系 RSSM)で学習する Multiwalker 協調制御（共有方策）
 
-**目的**: PettingZoo Multiwalker を対象に、世界モデルあり(Dreamer系)と世界モデルなし(モデルフリーPPO)のAB比較を再現可能に実施する。
-**前提**: Python 3.10.12。主要ライブラリはユーザー提示のバージョン（`gymnasium==0.29.1`, `pettingzoo==1.24.3`, `stable_baselines3==2.6.0`, `torch==2.6.0`, `moviepy==2.2.1`, `matplotlib==3.10.1`, `pandas==2.2.3`, `scikit-learn==1.7.2`, `SuperSuit==3.9.3` など）を使用。
-**学習方針**:
+## **目的**: 
+PettingZoo Multiwalker を対象に、世界モデルあり(Dreamer系)と世界モデルなし(モデルフリーPPO)のAB比較を再現可能に実施する。
+
+## **前提**: 
+Python 3.10.12。主要ライブラリはユーザー提示のバージョン（`gymnasium==0.29.1`, `pettingzoo==1.24.3`, `stable_baselines3==2.6.0`, `torch==2.6.0`, `moviepy==2.2.1`, `matplotlib==3.10.1`, `pandas==2.2.3`, `scikit-learn==1.7.2`, `SuperSuit==3.9.3` など）を使用。
+
+## **学習方針**:
 
 * 世界モデルあり: Dreamer系 RSSM + 共有方策(全エージェント同一ネットをパラメータ共有)、オンライン学習のみ、PyTorch `.pt` で保存
 * 世界モデルなし: モデルフリー共有PPO（比較用ベースライン）
